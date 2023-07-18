@@ -1,8 +1,9 @@
-import {Column, Container, Row} from "../../components/Layout/index.js";
+import {Column, Row} from "../../components/Layout/index.js";
+import styled from "styled-components";
 
-const about = () => {
+const About = () => {
     return (
-        <Container>
+        <Container className="grow">
             <Row className="justify-space-between">
                 <Column className="">
                    <h1>About</h1>
@@ -13,6 +14,20 @@ const about = () => {
     )
 }
 
+const Container = styled.div`
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+  &.grow {
+    flex: 1 0 0;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+`
 
-export default about
+
+export default About
 
