@@ -16,12 +16,6 @@ function App() {
                                 </Column>
                             </Row>
                         </Container>
-                        <Container>
-                            <Row>
-                                <Column>
-                                </Column>
-                            </Row>
-                        </Container>
                     </AppWrapper>
                 }/>
             </Routes>
