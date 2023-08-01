@@ -9,6 +9,9 @@ const Navbar = () => {
                 <Column className="">
                     <Link to="/" className="active">Home</Link>
                 </Column>
+                <Column className="align-center">
+                    <p>Marc Mata</p>
+                </Column>
                 <Column className="align-right">
                     <Link to="/about" className="active">About Page</Link>
                 </Column>
@@ -44,5 +47,7 @@ const Link = styled(NavLink)`
     color: red;
   }
 `;
+
+
 
 export default Navbar;
